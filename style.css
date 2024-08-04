@@ -1,0 +1,124 @@
+.ring {
+  border: 1px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.outer {
+  position: relative;
+  padding: 0;
+  margin: 1em auto;
+  width: 20em;
+  height: 20em;
+  list-style: none;
+  background: white;
+}
+.inner {
+  background: white;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+}
+.inner::after {
+  border: 1px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+  content: '';
+  display: block;
+  background: #53ec9f;
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  left: 12.5%;
+  top: 12.5%;
+}
+li {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  transform-origin: 0% 100%;
+  border-left: 1px solid black;
+
+}
+.ring li span{
+  position: absolute;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  text-align: center;
+  ztransform: skewY(60deg) rotate(15deg);
+  padding-top: 0.5em;
+
+}
+body {
+  background-color: #53ec9f; /* Codice colore per il verde primavera */
+}
+.form {
+  position: fixed;
+  right: 35%;
+  left:40%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+
+.a{
+  padding-left: 10px;
+}
+
+.left-side {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width:450px;
+  height: 100%;
+  background-color: #53ec9f;
+
+  padding-left: 50px;
+
+}
+
+.right-side {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 450px;
+  height: 100%;
+  background-color: #53ec9f;
+  padding-right: 50px;
+}
+.h1 {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+  font-family: 'Arial', sans-serif; /* Aggiunto qui */
+}
+
+.hr {
+
+  border: none;
+  border-top: 3px solid #000;
+  margin: 10px 0;
+}
+
+.i {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 15px;   
+}

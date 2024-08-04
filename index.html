@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/jpg" href="./ico.jpg">
+    <meta charset="UTF-8">
+    <title>Alberti Cipher</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="outer ring">
+    <ul class="stabilis"></ul>
+    <div class="inner ring">
+        <ul class="mobilis"></ul>
+    </div>
+</div>
+
+<div class="left-side">
+
+</div>
+<div class="right-side">
+
+</div>
+
+<div class="form">
+    <label>Encryption Method:</label>
+    <input type="radio" name="encryption-method" id="method1" value="Method 1" checked>
+    <label for="method1">Method 1</label>
+    <input type="radio" name="encryption-method" id="method2" value="Method 2">
+    <label for="method2">Method 2</label>
+    <br/>
+    <br/>
+    <label for="stabilis-start">Stabilis Start</label>
+    <select id="stabilis-start">
+        <option>A</option>
+    </select>
+    <label for="mobilis-start" class="a">Mobilis Start</label>
+    <select id="mobilis-start">
+        <option>k</option>
+    </select>
+    <br/>
+    <br/>
+    <label for="cipher-rotate">Rotate Cipher Every N Characters</label>
+    <input type="number" id="cipher-rotate" min="0" step="1" value="0"/>
+    <br/>
+    <br/>
+    <label for="input-text">Input Text</label><br/>
+    <textarea id="input-text"></textarea><br/>
+    <button id="encipher">Encipher</button>
+    <button id="decipher">Decipher</button>
+    <br/>
+    <br/>
+    <label for="input-text">Output Text</label><br/>
+    <textarea id="output-text" readonly="readonly"></textarea><br/>
+
+</div>
+<p class="i">Made by Stefano Zanoni</p>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src="./script.js"></script>
+</body>
+</html>
